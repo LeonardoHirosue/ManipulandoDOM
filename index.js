@@ -1,9 +1,9 @@
 function addResidence(){
     let number = document.getElementById("number").value;
     let neighborhood = document.getElementById("neighborhood").value;
-    let city = document.getElementById("city").value;
-    let area = document.getElementById("area").value;
-    
+    let city = document.querySelector("input[name='city']").value;
+    let area = document.querySelector("input[name='area']").value;
+    console.log(city);
     let newListItem = document.createElement("li");
     newListItem.innerText = `Área: ${area}, ${city} - ${neighborhood}, ${number} `;
 
